@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-06-02T00:00:00.000Z" agent="YogaBook-IFQ636-SysML" version="21.0.0" type="device">
+  <diagram id="p1" name="1. Requirements Diagram (BY-55)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1660" pageHeight="860" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="rt" value="YogaBook — SysML Requirements Diagram (BY-55)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="360" y="20" width="960" height="40" as="geometry"/></mxCell>
+        <mxCell id="rsys" value="&lt;&lt;system&gt;&gt;
+YogaBook Booking System" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="1"><mxGeometry x="590" y="80" width="380" height="60" as="geometry"/></mxCell>
+        <mxCell id="r01" value="REQ-01  &lt;&lt;requirement&gt;&gt;
+User Authentication
+
+The system shall support secure
+user authentication." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="200" width="250" height="100" as="geometry"/></mxCell>
+        <mxCell id="r02" value="REQ-02  &lt;&lt;requirement&gt;&gt;
+Venue Management
+
+The system shall allow admins
+to manage yoga venues." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="330" y="200" width="250" height="100" as="geometry"/></mxCell>
+        <mxCell id="r03" value="REQ-03  &lt;&lt;requirement&gt;&gt;
+Session Management
+
+The system shall allow admins
+to manage yoga sessions." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="620" y="200" width="250" height="100" as="geometry"/></mxCell>
+        <mxCell id="r04" value="REQ-04  &lt;&lt;requirement&gt;&gt;
+Booking System
+
+The system shall allow members
+to book yoga sessions." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="910" y="200" width="250" height="100" as="geometry"/></mxCell>
+        <mxCell id="r05" value="REQ-05  &lt;&lt;requirement&gt;&gt;
+Membership Management
+
+The system shall manage
+membership plans." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1200" y="200" width="250" height="100" as="geometry"/></mxCell>
+        <mxCell id="ec_r01" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="rsys" target="r01" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r02" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="rsys" target="r02" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r03" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="rsys" target="r03" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r04" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="rsys" target="r04" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r05" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="rsys" target="r05" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r011" value="REQ-01.1  id=01.1
+
+Register
+Users shall register
+with email and password." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="20" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r012" value="REQ-01.2  id=01.2
+
+Login + JWT
+Users shall log in
+and receive a JWT token." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="220" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r013" value="REQ-01.3  id=01.3
+
+Role-Based Access Control
+System enforces RBAC:
+Guest, Member, Admin roles." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="420" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r021" value="REQ-02.1  id=02.1
+
+Admin CRUD
+Admins shall create, edit
+and deactivate venues." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="620" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r022" value="REQ-02.2  id=02.2
+
+Public Browse
+All users shall be able
+to browse active venues." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="820" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r031" value="REQ-03.1  id=03.1
+
+Create Sessions
+Admins shall create sessions
+with venue, time, capacity." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1020" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r032" value="REQ-03.2  id=03.2
+
+Recurring Sessions
+Admins shall configure
+weekly recurring sessions." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1220" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r033" value="REQ-03.3  id=03.3
+
+View Timetable
+Users shall view sessions
+filtered by venue and date." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1420" y="380" width="190" height="90" as="geometry"/></mxCell>
+        <mxCell id="r041" value="REQ-04.1  id=04.1
+
+Book Session
+Members with active membership
+shall book sessions." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="20" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="r042" value="REQ-04.2  id=04.2
+
+Cancel Booking
+Members shall cancel
+upcoming bookings." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="230" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="r043" value="REQ-04.3  id=04.3
+
+Booking History
+Members shall view
+their booking history." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="440" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="r051" value="REQ-05.1  id=05.1
+
+Membership Plans
+Admin shall define
+membership plan options." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="650" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="r052" value="REQ-05.2  id=05.2
+
+Purchase and Renew
+Members shall purchase
+and renew memberships." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="860" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="r053" value="REQ-05.3  id=05.3
+
+Membership Required
+Active membership shall
+be required to book." style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1070" y="560" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="ec_r01_r011" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r01" target="r011" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r01_r012" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r01" target="r012" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r01_r013" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r01" target="r013" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r02_r021" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r02" target="r021" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r02_r022" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r02" target="r022" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r03_r031" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r03" target="r031" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r03_r032" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r03" target="r032" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r03_r033" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r03" target="r033" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r04_r041" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r04" target="r041" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r04_r042" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r04" target="r042" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r04_r043" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r04" target="r043" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r05_r051" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r05" target="r051" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r05_r052" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r05" target="r052" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_r05_r053" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=diamond;startFill=1;endArrow=none;startSize=8;" edge="1" source="r05" target="r053" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_sat" value="&lt;&lt;satisfy&gt;&gt;
+RBAC enforces
+booking access" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;strokeColor=#006EAF;fontColor=#006EAF;" edge="1" source="r013" target="r041" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_der1" value="&lt;&lt;deriveReqt&gt;&gt;
+Membership check
+derives from booking" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" source="r053" target="r041" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_der2" value="&lt;&lt;deriveReqt&gt;&gt;
+Session creation
+requires venue" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" source="r021" target="r031" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_ref1" value="&lt;&lt;refine&gt;&gt;
+Purchase flow
+refines requirement" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;strokeColor=#7B00B4;fontColor=#7B00B4;" edge="1" source="r052" target="r053" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_ref2" value="&lt;&lt;refine&gt;&gt;
+Token-based auth
+refines login req" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;strokeColor=#7B00B4;fontColor=#7B00B4;" edge="1" source="r012" target="r013" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rleg" value="LEGEND
+__________________________
+Containment (filled diamond)
+- -&lt;&lt;deriveReqt&gt;&gt;  Derived
+- -&lt;&lt;satisfy&gt;&gt;  Satisfies
+- -&lt;&lt;refine&gt;&gt;  Refines" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;" vertex="1" parent="1"><mxGeometry x="20" y="700" width="240" height="110" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p2" name="2. Use Case Diagram (BY-56)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="ut" value="YogaBook — SysML Use Case Diagram (BY-56)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="260" y="20" width="900" height="40" as="geometry"/></mxCell>
+        <mxCell id="usys" value="&lt;&lt;system&gt;&gt;
+YogaBook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#008a00;verticalAlign=top;align=center;fontStyle=1;fontSize=12;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="260" y="80" width="900" height="660" as="geometry"/></mxCell>
+        <mxCell id="u_guest" value="Guest" style="shape=mxgraph.sysml.actors.actor;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="260" width="80" height="100" as="geometry"/></mxCell>
+        <mxCell id="u_member" value="Member" style="shape=mxgraph.sysml.actors.actor;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="430" width="80" height="100" as="geometry"/></mxCell>
+        <mxCell id="u_admin" value="Admin" style="shape=mxgraph.sysml.actors.actor;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1220" y="260" width="80" height="100" as="geometry"/></mxCell>
+        <mxCell id="uc1" value="Browse Venues" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="320" y="140" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc2" value="View Timetable" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="140" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc3" value="Register" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="720" y="140" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc4" value="View Plans" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="920" y="140" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc5" value="Login / Logout" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="320" y="240" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc6" value="Book Session" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="240" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc7" value="Cancel Booking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="720" y="240" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc8" value="View My Bookings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="920" y="240" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc9" value="Purchase Membership" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="320" y="340" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc10" value="Renew Membership" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="340" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc11" value="Update Profile" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="720" y="340" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc12" value="Manage Venues" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="320" y="480" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc13" value="Manage Sessions" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="480" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc14" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="720" y="480" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc15" value="View All Bookings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="920" y="480" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="uc16" value="Manage Plans" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1"><mxGeometry x="520" y="570" width="170" height="50" as="geometry"/></mxCell>
+        <mxCell id="ea_g_uc1" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_guest" target="uc1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_g_uc2" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_guest" target="uc2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_g_uc3" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_guest" target="uc3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_g_uc4" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_guest" target="uc4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_gen_mg" value="" style="endArrow=block;endFill=0;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;fontSize=10;" edge="1" source="u_member" target="u_guest" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc5" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc6" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc7" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc7" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc8" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc8" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc9" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc9" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc10" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc10" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_m_uc11" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_member" target="uc11" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_gen_am" value="" style="endArrow=block;endFill=0;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;fontSize=10;" edge="1" source="u_admin" target="u_member" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_a_uc12" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_admin" target="uc12" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_a_uc13" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_admin" target="uc13" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_a_uc14" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_admin" target="uc14" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_a_uc15" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_admin" target="uc15" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea_a_uc16" value="" style="endArrow=none;html=1;fontSize=10;" edge="1" source="u_admin" target="uc16" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_i6_5" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;endFill=0;html=1;fontSize=10;fontColor=#006EAF;strokeColor=#006EAF;" edge="1" source="uc6" target="uc5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_i6_9" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;endFill=0;html=1;fontSize=10;fontColor=#006EAF;strokeColor=#006EAF;" edge="1" source="uc6" target="uc9" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_e7_8" value="&lt;&lt;extend&gt;&gt;" style="dashed=1;endArrow=open;endFill=0;html=1;fontSize=10;fontColor=#9673A6;strokeColor=#9673A6;" edge="1" source="uc7" target="uc8" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_i10_9" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;endFill=0;html=1;fontSize=10;fontColor=#006EAF;strokeColor=#006EAF;" edge="1" source="uc10" target="uc9" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="uleg" value="LEGEND
+__________________________
+--  Association
+--triangle  Generalization
+- -&lt;&lt;include&gt;&gt;
+- -&lt;&lt;extend&gt;&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;" vertex="1" parent="1"><mxGeometry x="20" y="680" width="200" height="100" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p3" name="3. Block Definition Diagram (BY-57)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bt" value="YogaBook — SysML Block Definition Diagram (BY-57)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="300" y="20" width="900" height="40" as="geometry"/></mxCell>
+        <mxCell id="b_sys" value="&lt;&lt;block&gt;&gt;
+YogaBookSystem
+-------------------------------
++ frontend : ReactFrontend
++ backend  : ExpressBackend
++ database : MongoDB
++ auth     : JWT
++ hosting  : AWS EC2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;verticalAlign=top;align=center;fontSize=12;" vertex="1" parent="1"><mxGeometry x="500" y="90" width="360" height="140" as="geometry"/></mxCell>
+        <mxCell id="b_fe" value="&lt;&lt;block&gt;&gt;
+ReactFrontend
+-------------------------------
+values:
+  version = 18.2
+  router = ReactRouter v6
+  css = Tailwind CSS
+operations:
+  + render(route)
+  + navigateTo(path)
+  + useAuth()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=center;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="310" width="290" height="160" as="geometry"/></mxCell>
+        <mxCell id="b_be" value="&lt;&lt;block&gt;&gt;
+ExpressBackend
+-------------------------------
+values:
+  port = 5001
+  authType = JWT (30d)
+  dbODM = Mongoose
+operations:
+  + handleRequest(req,res)
+  + verifyToken(token)
+  + connectDB()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=center;fontSize=11;" vertex="1" parent="1"><mxGeometry x="540" y="310" width="290" height="160" as="geometry"/></mxCell>
+        <mxCell id="b_db" value="&lt;&lt;block&gt;&gt;
+MongoDB (Atlas)
+-------------------------------
+values:
+  host = Atlas Cloud
+  dbName = yoga-booking
+  region = ap-southeast-2
+operations:
+  + find(filter)
+  + insertOne(doc)
+  + updateOne(filter,update)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;verticalAlign=top;align=center;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1020" y="310" width="290" height="160" as="geometry"/></mxCell>
+        <mxCell id="ec_sys_b_fe" value="1" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_sys" target="b_fe" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_sys_b_be" value="1" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_sys" target="b_be" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec_sys_b_db" value="1" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_sys" target="b_db" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bfe1" value="&lt;&lt;block&gt;&gt;
+PublicPages
+------
+HomePage
+VenuesPage
+TimetablePage
+LoginPage
+RegisterPage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="20" y="560" width="160" height="130" as="geometry"/></mxCell>
+        <mxCell id="ec_fe_bfe1" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_fe" target="bfe1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bfe2" value="&lt;&lt;block&gt;&gt;
+MemberPages
+------
+BookingsPage
+MembershipPage
+ProfilePage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="200" y="560" width="160" height="130" as="geometry"/></mxCell>
+        <mxCell id="ec_fe_bfe2" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_fe" target="bfe2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bfe3" value="&lt;&lt;block&gt;&gt;
+AdminPages
+------
+AdminDashboard
+AdminVenues
+AdminSessions
+AdminUsers
+AdminBookings
+AdminMembershipPlans" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="380" y="560" width="160" height="160" as="geometry"/></mxCell>
+        <mxCell id="ec_fe_bfe3" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_fe" target="bfe3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe1" value="&lt;&lt;block&gt;&gt;
+AuthModule
+------
++ register()
++ login()
++ protect() MW
++ adminOnly() MW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="500" y="560" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe1" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe2" value="&lt;&lt;block&gt;&gt;
+VenueModule
+------
++ getVenues()
++ createVenue()
++ updateVenue()
++ deleteVenue()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="680" y="560" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe2" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe3" value="&lt;&lt;block&gt;&gt;
+SessionModule
+------
++ getSessions()
++ createSession()
++ updateSession()
++ cancelSession()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="860" y="560" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe3" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe4" value="&lt;&lt;block&gt;&gt;
+BookingModule
+------
++ createBooking()
++ cancelBooking()
++ getMyBookings()
++ getAllBookings()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="500" y="690" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe4" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe5" value="&lt;&lt;block&gt;&gt;
+MembershipModule
+------
++ getPlans()
++ createPlan()
++ purchase()
++ renew()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="680" y="690" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe5" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bbe6" value="&lt;&lt;block&gt;&gt;
+AdminModule
+------
++ getDashboard()
++ getUsers()
++ updateUser()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="860" y="690" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_be_bbe6" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_be" target="bbe6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb1" value="&lt;&lt;block&gt;&gt;
+User
+------
+_id, name
+email (unique)
+password (hashed)
+role, isActive
+createdAt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="980" y="560" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb1" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb2" value="&lt;&lt;block&gt;&gt;
+Venue
+------
+_id, name
+address, suburb
+state, capacity
+isActive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1160" y="560" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb2" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb3" value="&lt;&lt;block&gt;&gt;
+Session
+------
+_id, title, type
+instructor, venue
+date, startTime
+capacity, bookedCount
+isCancelled" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1340" y="560" width="160" height="130" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb3" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb4" value="&lt;&lt;block&gt;&gt;
+Booking
+------
+_id, user
+session
+status
+bookedAt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="980" y="690" width="160" height="100" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb4" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb5" value="&lt;&lt;block&gt;&gt;
+Membership
+------
+_id, user, plan
+startDate, endDate
+status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1160" y="690" width="160" height="100" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb5" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bdb6" value="&lt;&lt;block&gt;&gt;
+MembershipPlan
+------
+_id, name
+price, durationDays
+description, isActive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f4fe;strokeColor=#6c8ebf;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1"><mxGeometry x="1340" y="700" width="160" height="90" as="geometry"/></mxCell>
+        <mxCell id="ec_db_bdb6" value="" style="edgeStyle=orthogonalEdgeStyle;startArrow=diamond;startFill=1;endArrow=none;startSize=10;" edge="1" source="b_db" target="bdb6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_fe_be" value="HTTP / REST
+JSON" style="endArrow=open;endFill=0;fontSize=10;dashed=0;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" source="b_fe" target="b_be" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e_be_db" value="Mongoose
+ODM" style="endArrow=open;endFill=0;fontSize=10;dashed=0;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" source="b_be" target="b_db" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bleg" value="LEGEND
+______________
+filled diamond = Composition
+arrow = Association / Uses" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;spacingTop=4;" vertex="1" parent="1"><mxGeometry x="20" y="840" width="220" height="60" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p4" name="4. Sequence: Booking Flow (BY-58)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="860" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="s4t" value="YogaBook — SysML Sequence Diagram: Booking Flow (BY-58)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="300" y="20" width="900" height="40" as="geometry"/></mxCell>
+        <mxCell id="s4n" value="Note: Member must have an active Membership
+(status=active, endDate &gt;= today) before
+booking. All auth via JWT Bearer token.
+Session capacity enforced server-side." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fillColor=#fff9c4;strokeColor=#c8a900;" vertex="1" parent="1"><mxGeometry x="20" y="80" width="240" height="100" as="geometry"/></mxCell>
+        <mxCell id="l_mbr" value="&lt;&lt;actor&gt;&gt;
+Member" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="120" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="l_mbr_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="199" y="130" width="2" height="720" as="geometry"/></mxCell>
+        <mxCell id="l_ui" value="&lt;&lt;boundary&gt;&gt;
+React UI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="380" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="l_ui_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="459" y="130" width="2" height="720" as="geometry"/></mxCell>
+        <mxCell id="l_api" value="&lt;&lt;control&gt;&gt;
+Express API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="640" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="l_api_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="719" y="130" width="2" height="720" as="geometry"/></mxCell>
+        <mxCell id="l_db" value="&lt;&lt;entity&gt;&gt;
+MongoDB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="900" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="l_db_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="979" y="130" width="2" height="720" as="geometry"/></mxCell>
+        <mxCell id="ab1" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="192" y="200" width="16" height="40" as="geometry"/></mxCell>
+        <mxCell id="ab2" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="452" y="200" width="16" height="660" as="geometry"/></mxCell>
+        <mxCell id="ab3" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="712" y="220" width="16" height="620" as="geometry"/></mxCell>
+        <mxCell id="ab4" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="972" y="240" width="16" height="40" as="geometry"/></mxCell>
+        <mxCell id="ab5" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="972" y="350" width="16" height="40" as="geometry"/></mxCell>
+        <mxCell id="ab6" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="972" y="490" width="16" height="50" as="geometry"/></mxCell>
+        <mxCell id="m1" value="1: click Book Now" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="215" y="215" as="sourcePoint"/><mxPoint x="475" y="215" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m2" value="2: POST /api/bookings {sessionId}" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="475" y="235" as="sourcePoint"/><mxPoint x="735" y="235" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m3" value="3: findOne({user, status:active, endDate:&gt;=now})" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="255" as="sourcePoint"/><mxPoint x="995" y="255" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m4" value="4: membership document or null" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="270" as="sourcePoint"/><mxPoint x="735" y="270" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="alt1" value="alt [no active membership]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="400" y="285" width="580" height="80" as="geometry"/></mxCell>
+        <mxCell id="m5" value="5: 403 Active membership required" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="305" as="sourcePoint"/><mxPoint x="475" y="305" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m6" value="6: Redirect -&gt; /membership" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="475" y="325" as="sourcePoint"/><mxPoint x="215" y="325" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m7" value="7: findById(sessionId)" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="380" as="sourcePoint"/><mxPoint x="995" y="380" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m8" value="8: session document" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="395" as="sourcePoint"/><mxPoint x="735" y="395" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="alt2" value="alt [bookedCount &gt;= capacity]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="400" y="410" width="580" height="70" as="geometry"/></mxCell>
+        <mxCell id="m9" value="9: 400 Session is fully booked" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="430" as="sourcePoint"/><mxPoint x="475" y="430" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m10" value="10: Booking.create({user, session, status:confirmed})" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="500" as="sourcePoint"/><mxPoint x="995" y="500" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m11" value="11: Session.updateOne({$inc:{bookedCount:1}})" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="520" as="sourcePoint"/><mxPoint x="995" y="520" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m12" value="12: booking confirmed" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="535" as="sourcePoint"/><mxPoint x="735" y="535" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m13" value="13: 201 {booking, message: Booking confirmed}" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="555" as="sourcePoint"/><mxPoint x="475" y="555" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="m14" value="14: Show success + navigate to /bookings" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="475" y="575" as="sourcePoint"/><mxPoint x="215" y="575" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="sd4" value="sd bookSession" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="100" y="200" width="900" height="400" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p5" name="5. Sequence: Auth Flow (BY-59)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="s5t" value="YogaBook — SysML Sequence Diagram: Authentication Flow (BY-59)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="200" y="20" width="1000" height="40" as="geometry"/></mxCell>
+        <mxCell id="s5n" value="Note: JWT_SECRET stored as env var.
+Tokens expire in 30 days.
+password hashed with bcrypt
+(10 salt rounds) via pre-save hook." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fillColor=#fff9c4;strokeColor=#c8a900;" vertex="1" parent="1"><mxGeometry x="20" y="80" width="220" height="90" as="geometry"/></mxCell>
+        <mxCell id="la_usr" value="&lt;&lt;actor&gt;&gt;
+User" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="100" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="la_usr_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="179" y="130" width="2" height="860" as="geometry"/></mxCell>
+        <mxCell id="la_ui" value="&lt;&lt;boundary&gt;&gt;
+React UI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="360" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="la_ui_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="439" y="130" width="2" height="860" as="geometry"/></mxCell>
+        <mxCell id="la_api" value="&lt;&lt;control&gt;&gt;
+Express API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="640" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="la_api_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="719" y="130" width="2" height="860" as="geometry"/></mxCell>
+        <mxCell id="la_db" value="&lt;&lt;entity&gt;&gt;
+MongoDB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="920" y="80" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="la_db_ln" value="" style="line;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;fillColor=none;" vertex="1" parent="1"><mxGeometry x="999" y="130" width="2" height="860" as="geometry"/></mxCell>
+        <mxCell id="sd_reg" value="sd register" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#007700;fontColor=#007700;fontStyle=1;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="240" y="170" width="840" height="320" as="geometry"/></mxCell>
+        <mxCell id="rab1" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="172" y="185" width="16" height="30" as="geometry"/></mxCell>
+        <mxCell id="rab2" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="432" y="185" width="16" height="300" as="geometry"/></mxCell>
+        <mxCell id="rab3" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="712" y="205" width="16" height="270" as="geometry"/></mxCell>
+        <mxCell id="rab4" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="992" y="220" width="16" height="50" as="geometry"/></mxCell>
+        <mxCell id="rm1" value="1: Fill register form (name, email, phone, password)" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="195" y="200" as="sourcePoint"/><mxPoint x="455" y="200" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm2" value="2: POST /api/auth/register {name, email, password, phone}" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="220" as="sourcePoint"/><mxPoint x="735" y="220" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm3" value="3: findOne({email})" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="240" as="sourcePoint"/><mxPoint x="1015" y="240" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm4" value="4: user or null" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1015" y="255" as="sourcePoint"/><mxPoint x="735" y="255" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="ralt" value="alt [email already exists]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="380" y="270" width="720" height="60" as="geometry"/></mxCell>
+        <mxCell id="rm5" value="5: 400 User already exists" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="290" as="sourcePoint"/><mxPoint x="455" y="290" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm6" value="6: User.create() -- bcrypt hashes password (pre-save hook)" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="345" as="sourcePoint"/><mxPoint x="1015" y="345" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm7" value="7: new User document" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1015" y="360" as="sourcePoint"/><mxPoint x="735" y="360" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm8" value="8: generateToken(user._id) -- JWT HS256 30d" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="375" as="sourcePoint"/><mxPoint x="735" y="375" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm9" value="9: 201 {_id, name, email, role:member, token}" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="390" as="sourcePoint"/><mxPoint x="455" y="390" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="rm10" value="10: localStorage.setItem(user); redirect -&gt; /membership" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="405" as="sourcePoint"/><mxPoint x="195" y="405" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="sd_log" value="sd login" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0050ef;fontColor=#0050ef;fontStyle=1;fontSize=11;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="240" y="520" width="840" height="380" as="geometry"/></mxCell>
+        <mxCell id="lab1" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="172" y="535" width="16" height="30" as="geometry"/></mxCell>
+        <mxCell id="lab2" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="432" y="535" width="16" height="350" as="geometry"/></mxCell>
+        <mxCell id="lab3" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="712" y="555" width="16" height="320" as="geometry"/></mxCell>
+        <mxCell id="lab4" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="992" y="570" width="16" height="50" as="geometry"/></mxCell>
+        <mxCell id="lm1" value="11: Fill login form (email, password)" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="195" y="550" as="sourcePoint"/><mxPoint x="455" y="550" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm2" value="12: POST /api/auth/login {email, password}" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="570" as="sourcePoint"/><mxPoint x="735" y="570" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm3" value="13: findOne({email})" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="590" as="sourcePoint"/><mxPoint x="1015" y="590" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm4" value="14: user document or null" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1015" y="605" as="sourcePoint"/><mxPoint x="735" y="605" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm5" value="15: bcrypt.compare(password, user.password)" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="625" as="sourcePoint"/><mxPoint x="735" y="625" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lalt" value="alt [invalid credentials]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=10;verticalAlign=top;align=left;spacingLeft=6;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="380" y="645" width="720" height="60" as="geometry"/></mxCell>
+        <mxCell id="lm6" value="16: 401 Invalid email or password" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="665" as="sourcePoint"/><mxPoint x="455" y="665" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm7" value="17: generateToken(user._id) -- JWT" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="720" as="sourcePoint"/><mxPoint x="735" y="720" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm8" value="18: 200 {_id, name, email, role, token}" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="735" y="740" as="sourcePoint"/><mxPoint x="455" y="740" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm9" value="19: Store token; update AuthContext state" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="455" y="760" as="sourcePoint"/><mxPoint x="195" y="760" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="lm10" value="20: Redirect -&gt; /admin (admin) or prev page (member)" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=10;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="195" y="775" as="sourcePoint"/><mxPoint x="1015" y="775" as="targetPoint"/></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p6" name="6. Activity: Session Management (BY-60)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="ac_t" value="YogaBook — SysML Activity Diagram: Admin Session Management (BY-60)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="200" y="20" width="1000" height="40" as="geometry"/></mxCell>
+        <mxCell id="lane_a" value="Admin" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="80" y="80" width="380" height="920" as="geometry"/></mxCell>
+        <mxCell id="lane_s" value="System" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1"><mxGeometry x="480" y="80" width="560" height="920" as="geometry"/></mxCell>
+        <mxCell id="ac_init" value="" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="lane_a"><mxGeometry x="244" y="110" width="20" height="20" as="geometry"/></mxCell>
+        <mxCell id="ac1" value="Navigate to
+Sessions Page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="140" y="150" width="200" height="50" as="geometry"/></mxCell>
+        <mxCell id="ac2" value="Click
+[+ Create Session]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="140" y="220" width="200" height="50" as="geometry"/></mxCell>
+        <mxCell id="ac3" value="Fill Session Form
+title, type, instructor
+venue, date, startTime
+duration, capacity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="140" y="290" width="200" height="80" as="geometry"/></mxCell>
+        <mxCell id="ac_dec_rec" value="Recurring
+weekly?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;verticalAlign=middle;" vertex="1" parent="lane_a"><mxGeometry x="184" y="400" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="ac_dec_ok" value="Creation
+successful?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;verticalAlign=middle;" vertex="1" parent="lane_a"><mxGeometry x="184" y="590" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="ac_err" value="Show error alert
+(return to form)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="10" y="590" width="120" height="50" as="geometry"/></mxCell>
+        <mxCell id="ac4" value="Timetable updated
+Session visible to members" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="140" y="680" width="200" height="50" as="geometry"/></mxCell>
+        <mxCell id="ac_dec_edit" value="Admin wants
+to edit?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;verticalAlign=middle;" vertex="1" parent="lane_a"><mxGeometry x="184" y="760" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="ac5" value="Edit session
+fields (modal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_a"><mxGeometry x="140" y="840" width="200" height="50" as="geometry"/></mxCell>
+        <mxCell id="acs1" value="Validate form fields
+Check venue exists + active" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="290" width="260" height="50" as="geometry"/></mxCell>
+        <mxCell id="acs2" value="Generate weekly instances
+from date to recurringEndDate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="400" width="260" height="60" as="geometry"/></mxCell>
+        <mxCell id="acs3" value="Create single
+Session object" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="480" width="260" height="50" as="geometry"/></mxCell>
+        <mxCell id="acs4" value="Session.insertMany()
+or Session.create()
+into MongoDB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="560" width="260" height="70" as="geometry"/></mxCell>
+        <mxCell id="acs5" value="Session.findByIdAndUpdate()
+Apply changes to MongoDB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="770" width="260" height="60" as="geometry"/></mxCell>
+        <mxCell id="ac_dec_can" value="Admin wants
+to cancel?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;verticalAlign=middle;" vertex="1" parent="lane_s"><mxGeometry x="574" y="840" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="acs6" value="Set isCancelled = true
+Release bookedCount
+Notify booked members" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lane_s"><mxGeometry x="540" y="920" width="260" height="60" as="geometry"/></mxCell>
+        <mxCell id="ac_final" value="" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;shape=doubleEllipse;" vertex="1" parent="lane_s"><mxGeometry x="634" y="990" width="20" height="20" as="geometry"/></mxCell>
+        <mxCell id="af1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_init" target="ac1" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac1" target="ac2" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac2" target="ac3" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af3b" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac3" target="acs1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac3" target="ac_dec_rec" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af5" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_rec" target="acs2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af6" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_rec" target="acs3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af6b" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs1" target="acs2" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs2" target="acs4" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs3" target="acs4" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs4" target="ac_dec_ok" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af10" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_ok" target="ac_err" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af10b" value="retry" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_err" target="ac3" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af11" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_ok" target="ac4" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af12" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac4" target="ac_dec_edit" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af13" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_edit" target="ac5" parent="lane_a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac5" target="acs5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs5" target="ac_dec_can" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af16" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_edit" target="ac_dec_can" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af17" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_can" target="acs6" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af18" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="acs6" target="ac_final" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="af19" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" source="ac_dec_can" target="ac_final" parent="lane_s"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="acnote" value="Note: Admin lane = user actions.
+System lane = automated backend.
+Error path loops back to form.
+Recurring sessions bulk-inserted
+as separate MongoDB documents." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=10;fillColor=#fff9c4;strokeColor=#c8a900;" vertex="1" parent="1"><mxGeometry x="20" y="760" width="220" height="110" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
